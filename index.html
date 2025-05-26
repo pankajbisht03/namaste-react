@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+</head>
+
+<body>
+    <div id="root">
+        <!-- <h1>Namaste React</h1> -->
+    </div>
+    <script>
+        const heading = document.createElement("h1");
+
+        // document is part of the DOM(Document Object Model).
+
+        // It represents the entire HTML page as a JavaScript object.
+
+        // It 's automatically created by the browser when a web page is loaded.
+
+        // It allows you to access and manipulate HTML elements using JavaScript.
+
+         //injecting text to the created h1 tag.
+        heading.innerHTML = "Hello world from JS";
+        // accessing the root as getElementById as it is id
+       
+        const myRoot = document.getElementById("root");
+        //append child is the method which is present in every html node
+        myRoot.appendChild(heading)
+    </script>
+
+    </script>
+
+</body>
+
+</html>
