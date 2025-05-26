@@ -34,6 +34,9 @@ const HeaderComponentArrow = () => {
         <div>
             <h1>This is Functional Component using Arrow functions</h1>
             <HeaderComponent/>
+            {/* can also call the function like this at the end it is js */}
+            {/* any code of js can be executed inside JSX using curly braces {} */}
+            {HeaderComponentShortHand()} 
             <h2>This is component composition</h2>
         </div>
     )

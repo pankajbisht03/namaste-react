@@ -87,3 +87,4 @@ in package.json :  "devDependencies": {
     💥 Function Based Component. new way of writing.
    🗯 A function that return a JSX is functional component
 11. Component composition
+12. ☸ Any code of js can be executed inside JSX using curly braces {}
