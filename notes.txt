@@ -1,4 +1,4 @@
- ******************* IGNITING OUR APP ************************
+ ******************* IGNITING OUR APP 🚀 ************************
  
  ** NPM => It is a standard repo for all the packages.
 ** npm init: This will create a package.json in our file. package.json is configuration for npm.It is responsible for managing packages that we install in our project.
@@ -47,5 +47,43 @@ in package.json :  "devDependencies": {
   => whenever parcel created buit it put the built inside dist folder.
   => these bundlers makes our app fast not react(but to some extent)
 
-  ** If we want that our project should definitely work on which browser or which versions we can configure it too in package.json
+** If we want that our project should definitely work on which browser or which versions we can configure it too in package.json
    => "browsersList":["last two Chrome version"] it will definitely work on last two Chrome versions. Can give country specific details also.
+
+
+*************************** LAYING THE FOUNDATION ****************************
+1. As we are using always npx parcel index.html.
+  * We can automate this by creating a script in package.json
+    like:  "scripts": {
+    "start":"parcel index.html",
+    "build": "parcel build index.html"
+  },
+  * Now we can execute these commands by a command => npm run start or npm start (for start only).
+  * start is a special keyword in npm that will start the development server.
+2. Poor we creating React Element like: 😅
+    const parent = React.createElement("div", {
+        id: "parent"
+    }, React.createElement("h1", {
+        id: "child-h1"
+    }, React.createElement("h2", {
+        id: "child-h2"
+    }, "Inside of h1 Tag")))
+     💥 React Element is an js object
+3. React Devs worked on it helped us in a way like we can write html with some piece of js which is JSX 😍‍
+4. JSX (Javascript Syntax) which is more easy to write. 😁
+5. JSX is not HTML in javascript but html like syntax.
+6.  const jsxHeading = <h1>JSX Here </h1>.
+      *This is not a javascript .
+      *Javascript should be understood by JS Engine.
+      *On executing const jsxHeading = <h1>JSX Here </h1> 
+      *Uxpected token "<"
+ 7. JSX code(transpiled => before reaching js engine). Thats why code works on Foundation_03.js
+ 8. Transpiling or converting the code that browsers can understand is done by:
+        💥 Parcel
+        💥 Babel babel is basically javascript compiler converting jsx to React.createElement() behind the scenes.
+9 . If we want to give attributes to JSX we need to give it in 🐪 camelCase     
+10.💫 REACT COMPONENTS => Just a normal javascript function.
+    💥 Class Based Component. older way of writing.
+    💥 Function Based Component. new way of writing.
+   🗯 A function that return a JSX is functional component
+11. Component composition
