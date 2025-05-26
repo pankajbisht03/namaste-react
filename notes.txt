@@ -1,0 +1,51 @@
+ ******************* IGNITING OUR APP ************************
+ 
+ ** NPM => It is a standard repo for all the packages.
+** npm init: This will create a package.json in our file. package.json is configuration for npm.It is responsible for managing packages that we install in our project.
+** package.json keeps track of versions of packages that our app or project is using.
+** bundlers: bundlers basically bundles our app and optimizes it. so that it can be production ready;
+** different types of bundlers : parcel, webpack, vite, etc
+** npm install -D parcel => D here stands for dev dependency.
+** two types of dependencies: 1. Dev dependencies (used in development environment) 2. Normal dependencies
+** Parcel will be using. It is beast.
+in package.json :  "devDependencies": {
+    "parcel": "^2.15.2"
+  }
+ **  ^ this is caret sign, if there is new minor version(2.15.4 not 3.1.1 as it is major update) for parcel like 2.15.3 the caret sign ^ will automatically update with new version.
+ ** ~ this is tilda if it is used in front of any package this means it can upgrade to major version if there is new package update
+**  As soon as npm install -D parcel is finished package-lock.json file is added to our project.
+**  package-lock.json keeps exact version of dependencies that we are using. (without ^ or ~ )
+**  As soon as npm install -D parcel is finished also node_modules folder is added in our project.
+**  node_modules have all the code of packages that we installed in our app.
+** packages have dependencies of packages in our app these type of dependencies are called Transitive dependencies(dependencies inside dependencies) thats why node moudles are very heavy.
+** Every dependencies have their package.json (see node_modules ) and have their own dependencies.
+** Files and folders that we can create later can be put inside .gitignore(we can put node_modules there as we can re create it by npm install);
+**  npm and npx 
+** npm is used to install a package and npx is used to execute a package.
+**  npx parcel index.html
+** this will execute index.html and bundles it and host it on localhost
+** It is better to have react in our project through as a package not by cdn links as why to have a network call and if in the future the version change so the cdn will provide older versions only -->
+** npm install react && npm install react-dom (as we have two links for cdn also one for core react and other for react dom)
+** we got error as React is not defined as previously coming from CDN links.
+** Need to import react in our project or app.js(here) as import React from "react" from "react" means from node node_modules;
+** run again npx parcel index.html
+** will encounter an error  =>  Browser scripts cannot have imports or exports.
+** Reason behind this error => inside index.html we have script pointing towards App.js which for Browser a normal JS file but when it goes inside App.js it sees import which is not a javascript keywords
+  ## we need to tell the Browser that it is not a ordinary js file but it is react file by giving it a type called "module" inside script tag.
+** Parcel
+  => creates dev build
+  => creates local server
+  => HMR (Hot Module Replacement -   when we save our file the page gets automatically refreshed.)
+  => File watching algorithm and is written in C++
+  => Faster Builds - Caching it is in .parcel-cache
+  => image optimization
+  => minification / bundling/ optimize/ compress
+  => code splitting
+  => error handling
+  => Tree shaking  =>  will remove unused code for us
+  => Different built for dev and production
+  => whenever parcel created buit it put the built inside dist folder.
+  => these bundlers makes our app fast not react(but to some extent)
+
+  ** If we want that our project should definitely work on which browser or which versions we can configure it too in package.json
+   => "browsersList":["last two Chrome version"] it will definitely work on last two Chrome versions. Can give country specific details also.
