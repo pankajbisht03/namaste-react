@@ -1,0 +1,23 @@
+.header-component{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+ .nav-items > ul{
+     font-size: 22px;
+    display: flex;
+    list-style-type: none;
+}
+.nav-items > ul > li {
+    padding: 7px;
+    margin: 7px;
+}
+.search-bar{
+    padding: 10px;
+}
+.res-cards{
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+
+}

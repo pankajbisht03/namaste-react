@@ -71,6 +71,7 @@ in package.json :  "devDependencies": {
      💥 React Element is an js object
 3. React Devs worked on it helped us in a way like we can write html with some piece of js which is JSX 😍‍
 4. JSX (Javascript Syntax) which is more easy to write. 😁
+  🗯 A JavaScript variable can hold a JSX expression, which React turns into a React element.
 5. JSX is not HTML in javascript but html like syntax.
 6.  const jsxHeading = <h1>JSX Here </h1>.
       *This is not a javascript .
@@ -88,3 +89,16 @@ in package.json :  "devDependencies": {
    🗯 A function that return a JSX is functional component
 11. Component composition
 12. ☸ Any code of js can be executed inside JSX using curly braces {}
+
+
+*************************** TALK IS CHEAP SHOW ME THE CODE ****************************
+NOTE 📝 => Before building a project planning is required. A better planning comes with less debugging.
+* props are just arguments to a function.
+💫 Config Driven UI. 💥 Controlling UI based on data or config.
+* When writing a map and returning a jsx, a unique key should be passed to that element as it helps react to render a new list other wise it will have to render all items again.
+* Never use indexes as keys (bad practice)
+* Two Types of exports
+  🔰 Named Export (for exporting multiple files eg. export const URL="")
+  Named Export should be imported as {} (inside curly beackets)
+  🔰 Default export (one file can have only one default export e.g export default URL="" or export default Header);
+  Default Export should be imported normally without {} brackets.
