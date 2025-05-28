@@ -102,3 +102,12 @@ NOTE 📝 => Before building a project planning is required. A better planning c
   Named Export should be imported as {} (inside curly beackets)
   🔰 Default export (one file can have only one default export e.g export default URL="" or export default Header);
   Default Export should be imported normally without {} brackets.
+
+  *************************** LETS GET HOOKED ****************************
+💥 Data Layer and UI layer are in sync because of hooks in React. 
+* Hooks are normal js function that is given to us by React.
+  💢 useState
+  💢 useEffect
+
+🔯  Whenever state variable changes in react the whole component gets rendered.
+🔯 React is good at DOM manipulation
